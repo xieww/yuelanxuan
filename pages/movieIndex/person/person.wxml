@@ -1,2 +1,4 @@
-<!--pages/movieIndex/person/person.wxml-->
-<text>pages/movieIndex/person/person.wxml</text>
+<view class='cinema'>
+<image src="../../../images/noun.png" mode="aspectFill"/>
+  <text class='title'>此星球暂未开放</text>
+</view>

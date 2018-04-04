@@ -52,17 +52,17 @@
 }
 
 .plain-font{
-    color: #666;
+    color: #fff;
     font-size:24rpx;
     margin-right: 30rpx;
 }
 
 
 .movie-img{
-    height:238rpx;
-    width: 175rpx;
+    height:378rpx;
+    width: 285rpx;
     position: absolute;
-    top:160rpx;
+    top:120rpx;
     right: 30rpx;
 }
 

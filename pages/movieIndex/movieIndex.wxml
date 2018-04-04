@@ -1,9 +1,14 @@
 <!-- <import src="common/star/star.wxml" /> -->
 <import src="common/movieItem-template/movieItem-template.wxml" />
+<import src="common/searchBar/searchBar.wxml" />
 <view class='movie-index' wx:if="{{movieList[0].movies}}">
+  <view catchtap="searchData">
+    <template is="searchBars" data="{{inputVal:inputVal,inputShowed:inputShowed}}" />
+  </view>
+
   <view class='swiper-item'>
     <swiper indicator-dots="true" autoplay="true" interval="5000" duration="1000">
-      <swiper-item wx:for="{{ movieList[0].movies }}" wx:key="id">
+      <swiper-item wx:for="{{ movieList[0].movies }}" wx:key="id" catchtap="onMovieTap" data-movieId="{{item.id}}">
         <image src="{{ item.images.medium }}" mode="widthFix" />
       </swiper-item>
     </swiper>
@@ -14,7 +19,7 @@
         <navigator url="movieLists/movieLists?type={{ item.key }}&title={{ item.title }}" hover-class="none">
           <view class="title">
             <text>{{ item.title }}</text>
-            <image src="../../images/arrow.png" mode="aspectFill" wx:if="{{item.title}}"/>
+            <image src="../../images/arrow.png" mode="aspectFill" wx:if="{{item.title}}" />
           </view>
         </navigator>
         <scroll-view class="movies-item" scroll-x="true">

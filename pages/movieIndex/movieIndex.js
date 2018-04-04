@@ -12,7 +12,9 @@ Page({
       { key: 'coming_soon' },
       { key: 'new_movies' },
       { key: 'top250' }
-    ]
+    ],
+    inputShowed: false,
+    inputVal: ""
   },
 
   /**
@@ -32,6 +34,33 @@ Page({
     Promise.all(tasks).then(movieList => {
       this.setData({ movieList: movieList, loading: false })
       wx.hideLoading()
+    })
+  },
+
+  showInput: function () {
+    this.setData({
+      inputShowed: false
+    });
+  },
+  hideInput: function () {
+    this.setData({
+      inputVal: "",
+      inputShowed: false
+    });
+  },
+  clearInput: function () {
+    this.setData({
+      inputVal: ""
+    });
+  },
+  inputTyping: function (e) {
+    this.setData({
+      inputVal: e.detail.value
+    });
+  },
+  searchData: function(e) {
+    wx.navigateTo({
+      url: 'searchDataPage/searchDataPage'
     })
   },
 

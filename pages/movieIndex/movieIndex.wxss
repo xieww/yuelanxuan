@@ -1,5 +1,12 @@
 /* @import "common/star/star.wxss"; */
 @import "common/movieItem-template/movieItem-template.wxss";
+@import "common/searchBar/searchBar.wxss";
+
+.weui-search-bar {
+  background-color: #70ddc0;
+  border-top: 1rpx solid #70ddc0;
+  border-bottom: 1rpx solid #70ddc0;
+}
 
 swiper {
   width: 100%;
@@ -13,7 +20,7 @@ swiper image {
 
 .movie-list {
   box-sizing: border-box;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
 }
 
 .movie-items {
@@ -51,22 +58,3 @@ swiper image {
   height: 300rpx;
   width: 900rpx;
 }
-
-/* .movie-list .movies-item .movies-item-1 .movies-item-2 {
-  display: flex;
-  flex-direction: column;
-  width: 180rpx;
-  margin: 10rpx;
-}
-
-.movie-list .movies-item .movies-item-1 .movies-item-2  image {
-  width: 180rpx;
-  height: 250rpx;
-}
-
-.movie-list .movies-item .movies-item-1 .movies-item-2  text {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  margin-top: 5px;
-} */

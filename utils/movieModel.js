@@ -51,7 +51,7 @@ export function createMovieModel(data) {
     data.wish_count,
     data.comments_count,
     data.year,
-    data.genres.join("、"),
+    data.genres.join("/"),
     data.rating.stars,
     data.rating.average,
     director,

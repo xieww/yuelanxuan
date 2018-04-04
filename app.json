@@ -1,7 +1,6 @@
 {
   "pages":[
-    
- 
+
     "pages/index/index",
     "pages/logs/logs",
     "pages/movieIndex/movieIndex",
@@ -9,7 +8,8 @@
     "pages/movieIndex/movieLists/movieLists",
     "pages/movieIndex/movieDetail/movieDetail",
     "pages/movieIndex/cinema/cinema",
-    "pages/movieIndex/person/person"
+    "pages/movieIndex/person/person",
+    "pages/movieIndex/searchDataPage/searchDataPage"
   ],
   "window":{
     "backgroundTextStyle":"light",

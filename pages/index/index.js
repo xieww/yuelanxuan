@@ -50,7 +50,7 @@ Page({
       wx.switchTab({
         url: '../movieIndex/movieIndex'
       })
-    },4000);
+    },5000);
   },
   getUserInfo: function(e) {
     console.log(e)

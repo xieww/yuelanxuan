@@ -12,9 +12,9 @@
         <text wx:elif="{{stars == 15}}" class='rating-stars allstar15'></text>
         <text wx:elif="{{stars == 10}}" class='rating-stars allstar10'></text>
         <text wx:elif="{{stars == 5}}" class='rating-stars allstar5'></text>
-        <text wx:else >暂无评分</text>  
+        <text wx:else class='rating-no'>暂无评分</text>  
       </block>
     </view>
-     <text class='score'>{{score}}</text> 
+     <text wx:if="{{score > 0}}" class='score'>{{score}}</text> 
   </view>
 </template>

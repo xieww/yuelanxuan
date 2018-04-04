@@ -21,6 +21,14 @@
   overflow: hidden;
 }
 
+.rating .rating-star .rating-no {
+  display: inline-block;
+  zoom: 1;
+  height: 11px;
+  margin: -2px 3px 0 0;
+  font-size: 20rpx;
+  color: #999;
+}
 .rating .rating-star  .allstar50 {
   background-position: 0 0px;
 }

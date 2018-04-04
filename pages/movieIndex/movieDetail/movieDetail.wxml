@@ -47,7 +47,7 @@
     <text class="summary-content">{{movie.summary}}</text>
   </view>
   <view class="hr"></view>
-  <view class="cast">
+  <view class="cast" wx:if="{{movie.castsInfo[0].img}}">
     <text class="cast-font">影人</text>
     <scroll-view class="cast-imgs" scroll-x="true" style="width:100%">
       <block wx:for="{{movie.castsInfo}}" wx:for-item="item" wx:key="id">

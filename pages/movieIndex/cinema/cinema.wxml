@@ -1,2 +1,5 @@
 <!--pages/movieIndex/cinema/cinema.wxml-->
-<text>pages/movieIndex/cinema/cinema.wxml</text>
+<view class='cinema'>
+  <image src="../../../images/noun.png" mode="aspectFill"/>
+  <text class='title'>换个地方试试</text>
+</view>
