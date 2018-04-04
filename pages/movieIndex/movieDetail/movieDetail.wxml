@@ -50,7 +50,6 @@
   <view class="cast">
     <text class="cast-font">影人</text>
     <scroll-view class="cast-imgs" scroll-x="true" style="width:100%">
-      
       <block wx:for="{{movie.castsInfo}}" wx:for-item="item" wx:key="id">
         <view class="cast-container">
           <image class="cast-img" src="{{item.img}}" data-src="{{item.img}}" catchtap="viewMoviePostImg" touchforcechange="viewMoviePostImg"></image>
