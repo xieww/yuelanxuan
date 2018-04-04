@@ -1,0 +1,20 @@
+@import "../common/movieItem-template/movieItem-template.wxss";
+@import "../common/loadmore/loadmore.wxss";
+
+.movies-list-item {
+  height: 100%;
+  padding: 30rpx 20rpx 10rpx 10rpx;
+  margin: 0 auto;
+}
+
+.movies-list-item .movies-list-items navigator {
+  float: left;
+  padding: 0 20rpx;
+}
+
+.movies-list-item .tips {
+  clear: both;
+  height: 200rpx; 
+  width: 100%;
+  padding-top: 10rpx;
+}

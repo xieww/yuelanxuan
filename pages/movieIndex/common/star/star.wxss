@@ -1,0 +1,71 @@
+.rating {
+  display: flex;
+  flex-direction: row;
+}
+
+.rating .rating-star {
+  display: flex;
+  flex-direction: row;
+  height: 17rpx;
+  margin-top: 6rpx;
+  width: 58px;
+}
+
+.rating .rating-star .rating-stars {
+  display: inline-block;
+  zoom: 1;
+  background: url(https://img3.doubanio.com/f/shire/b8f4c3672ef81106701071831e22422a745d3b74/pics/rating_icons/ic_rating_s@2x.png) no-repeat;
+  width: 58px;
+  height: 11px;
+  margin: 0px 3px 0 0;
+  overflow: hidden;
+}
+
+.rating .rating-star  .allstar50 {
+  background-position: 0 0px;
+}
+
+.rating .rating-star .allstar45 {
+  background-position: 0 -11px;
+}
+
+ .rating .rating-star .allstar40 {
+  background-position: 0 -22px;
+}
+
+.rating .rating-star .allstar35 {
+  background-position: 0 -33px;
+}
+
+.rating .rating-star .allstar30 {
+  background-position: 0 -44px;
+}
+
+.rating .rating-star .allstar25 {
+  background-position: 0 -55px;
+}
+
+.rating .rating-star .allstar20 {
+  background-position: 0 -66px;
+}
+
+.rating .rating-star .allstar15 {
+  background-position: 0 -77px;
+}
+
+.rating .rating-star .allstar10 {
+  background-position: 0 -88px;
+}
+
+.rating .rating-star .allstar05 {
+  background-position: 0 -99px;
+}
+
+.rating .rating-star .allstar00 {
+  background-position: 0 -110px;
+}
+
+.rating .score {
+  margin-left: 5px;
+  color: #B0B0B0;
+}

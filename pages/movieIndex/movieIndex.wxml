@@ -1,0 +1,28 @@
+<!-- <import src="common/star/star.wxml" /> -->
+<import src="common/movieItem-template/movieItem-template.wxml" />
+<view class='movie-index' wx:if="{{movieList[0].movies}}">
+  <view class='swiper-item'>
+    <swiper indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+      <swiper-item wx:for="{{ movieList[0].movies }}" wx:key="id">
+        <image src="{{ item.images.medium }}" mode="widthFix" />
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class='movie-list' scroll-y="true">
+    <block wx:for="{{ movieList }}" wx:key="key">
+      <view class='movie-items'>
+        <navigator url="movieLists/movieLists?type={{ item.key }}&title={{ item.title }}" hover-class="none">
+          <view class="title">
+            <text>{{ item.title }}</text>
+            <image src="../../images/arrow.png" mode="aspectFill" wx:if="{{item.title}}"/>
+          </view>
+        </navigator>
+        <scroll-view class="movies-item" scroll-x="true">
+          <view class="movies-item-1">
+            <template is="MovieItem" data="{{movies:item.movies}}" />
+          </view>
+        </scroll-view>
+      </view>
+    </block>
+  </view>
+</view>

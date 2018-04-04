@@ -1,0 +1,177 @@
+@import "../common/star/star.wxss";
+
+.container-detail{
+    display:flex;
+    flex-direction: column;
+}
+
+.head-img{
+    width:100%;
+    height: 320rpx;
+    -webkit-filter:blur(20px);
+}
+
+.head-img-hover{
+    width: 100%;
+    height: 320rpx;
+    position:absolute;
+    top:0;
+    left:0;
+    display:flex;
+    flex-direction: column;
+}
+
+.main-title{
+    font-size: 19px;
+    color:#fff;
+    font-weight:bold;
+    margin-top: 50rpx;
+    margin-left: 40rpx;
+    letter-spacing: 2px;
+}
+
+.sub-title{
+    font-size: 28rpx;
+    color:#fff;
+    margin-left: 40rpx;
+    margin-top: 30rpx;
+}
+
+.like{
+    display:flex;
+    flex-direction: row;
+    margin-top: 30rpx;
+    margin-left: 40rpx;
+}
+
+.highlight-font{
+    /* color: #f21146; */
+    font-size:24rpx;
+    margin-right: 10rpx;
+    color: #FF6347;
+}
+
+.plain-font{
+    color: #666;
+    font-size:24rpx;
+    margin-right: 30rpx;
+}
+
+
+.movie-img{
+    height:238rpx;
+    width: 175rpx;
+    position: absolute;
+    top:160rpx;
+    right: 30rpx;
+}
+
+.summary{
+    margin-left:40rpx;
+    margin-top: 40rpx;
+    color: #777777;
+    font-size: 24rpx;
+}
+
+.original-title{
+    color: #1f3463;
+    font-size: 24rpx;
+    font-weight: bold;
+    margin-bottom: 40rpx;
+}
+
+.flex-row{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 10rpx;
+}
+
+.mark{
+    margin-right: 30rpx;
+    white-space:nowrap;
+    color: #999999;
+}
+
+.hr{
+    margin-top:45rpx;
+    height:30rpx;
+    width: 100%;
+    background-color: #F0F0F0;
+}
+
+.synopsis{
+    margin-left:40rpx;
+    display:flex;
+    flex-direction: column;
+    margin-top: 50rpx;
+    font-size: 24rpx;
+}
+
+.synopsis-font{
+    color:#666;
+}
+
+.summary-content{
+    margin-top: 20rpx;
+    margin-right: 40rpx;
+    line-height:40rpx;
+    letter-spacing: 1px;
+    color: #999;
+}
+
+.cast{
+    margin-left:40rpx;
+    display:flex;
+    flex-direction: column;
+    margin-top:50rpx;
+    font-size: 26rpx;
+}
+
+.cast-font{
+    color: #666;
+    margin-bottom: 20rpx;
+}
+
+.cast-container{
+    display:inline-flex;
+    flex-direction: column;
+    margin-bottom: 50rpx;
+    margin-right: 40rpx;
+    width: 170rpx;
+    text-align:center;
+    white-space: nowrap;
+    color: #666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cast-imgs{
+    white-space: nowrap;
+}
+
+.cast-img{
+    width: 180rpx;
+    height: 230rpx;
+}
+.cast-name{
+    margin: 10rpx auto 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+@import "../star/star.wxss";
+
+.movies-item-2 {
+  display: flex;
+  flex-direction: column;
+  width: 180rpx;
+  margin: 10rpx;
+}
+
+.movies-item-2  image {
+  width: 180rpx;
+  height: 250rpx;
+}
+
+.movies-item-2  .movie-name {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: 5px;
+}
+text {
+  font-size: 25rpx;
+}

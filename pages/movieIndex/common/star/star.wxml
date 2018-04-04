@@ -1,0 +1,20 @@
+<template name="starsTemplate">
+  <view class='rating'>
+    <view class='rating-star'>
+      <block wx:if="{{true}}"> 
+        <text wx:if="{{stars == 50}}" class='rating-stars allstar50'></text>   
+        <text wx:elif="{{stars == 45}}" class='rating-stars allstar45'></text>
+        <text wx:elif="{{stars == 40}}" class='rating-stars allstar40'></text>
+        <text wx:elif="{{stars == 35}}" class='rating-stars allstar35'></text>
+        <text wx:elif="{{stars == 30}}" class='rating-stars allstar30'></text>
+        <text wx:elif="{{stars == 25}}" class='rating-stars allstar25'></text>
+        <text wx:elif="{{stars == 20}}" class='rating-stars allstar20'></text>
+        <text wx:elif="{{stars == 15}}" class='rating-stars allstar15'></text>
+        <text wx:elif="{{stars == 10}}" class='rating-stars allstar10'></text>
+        <text wx:elif="{{stars == 5}}" class='rating-stars allstar5'></text>
+        <text wx:else >暂无评分</text>  
+      </block>
+    </view>
+     <text class='score'>{{score}}</text> 
+  </view>
+</template>

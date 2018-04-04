@@ -1,0 +1,10 @@
+<import src="../star/star.wxml" />
+<template name="MovieItem">
+  <navigator wx:for="{{ movies }}" wx:key="id" url="movieDetail/movieDetail?id={{ item.id }}">
+    <view class="movies-item-2" catchtap="onMovieTap" data-movieId="{{item.id}}">
+      <image src="{{ item.images.large }}" mode="aspectFill" />
+      <text class='movie-name'>{{ item.title }}</text>
+      <template is="starsTemplate" data="{{stars:item.rating.stars, score: item.rating.average}}" />
+    </view>
+  </navigator>
+</template>

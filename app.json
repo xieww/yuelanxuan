@@ -1,0 +1,51 @@
+{
+  "pages":[
+    
+ 
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/movieIndex/movieIndex",
+    "pages/movieIndex/movieItem/movieItem",
+    "pages/movieIndex/movieLists/movieLists",
+    "pages/movieIndex/movieDetail/movieDetail",
+    "pages/movieIndex/cinema/cinema",
+    "pages/movieIndex/person/person"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#70DDC0",
+    "navigationBarTitleText": "悦兰轩",
+    "navigationBarTextStyle":"black"
+  },
+    "tabBar": {
+      "color": "#666666",
+      "selectedColor": "#000000",
+      "borderStyle": "white",
+      "backgroundColor": "#f8f9fb",
+      "list": [
+        {
+          "text": "电影",
+          "pagePath": "pages/movieIndex/movieIndex",
+          "iconPath": "images/movie-o.png",
+          "selectedIconPath": "images/movie.png"
+        },
+        {
+          "text": "影院",
+          "pagePath": "pages/movieIndex/cinema/cinema",
+          "iconPath": "images/cinema-o.png",
+          "selectedIconPath": "images/cinema.png"
+        },
+        {
+          "text": "我的",
+          "pagePath": "pages/movieIndex/person/person",
+          "iconPath": "images/person-o.png",
+          "selectedIconPath": "images/person.png"
+        }
+      ]
+    },
+    "networkTimeout": {
+      "request": 20000,
+      "downloadFile": 20000
+    },
+    "debug": false
+}

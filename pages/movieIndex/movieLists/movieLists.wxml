@@ -1,0 +1,14 @@
+<import src="../common/movieItem-template/movieItem-template.wxml" />
+<import src="../common/loadmore/loadmore.wxml" />
+<view class="container-list">
+  <scroll-view class="movies-list-item" scroll-y="true" scroll-x="false">
+    <view class='movies-list-items'>
+      <template is="MovieItem" data="{{movies}}" />
+    </view>
+    <view class='tips'>
+      <template wx:if="{{hasMore}}"  is="zan-loadmore" data="{{ loading: hasMore }}" />
+      <template wx:else is="zan-loadmore" data="{{ nomore: true }}" />
+    </view>
+  </scroll-view>
+
+</view>
