@@ -1,0 +1,110 @@
+@import "../common/searchBar/searchBar.wxss";
+
+.weui-search-bar {
+  background-color: #70ddc0;
+  border-top: 1rpx solid #70ddc0;
+  border-bottom: 1rpx solid #70ddc0;
+}
+.searchHistory {
+    margin-top: 0;
+    font-size: 14px;
+}
+.searchHistory .history-title {
+  /* height: 70rpx; */
+  background-color: #F8F8F8 ;
+  padding: 16rpx 20rpx 16rpx;
+}
+.searchHistory .history-title .clear {
+  float: right;
+}
+.searchHistory .history-item {
+    padding: 22rpx 20rpx 19rpx;
+    /* background-color: #666 ; */
+}
+.searchHistory .hr {
+    margin-top:10rpx; 
+    height:1rpx;
+    width: 100%;
+    background-color: #F0F0F0;
+}
+/* .search-page .searchbar-result{
+    margin-top: 0;
+    font-size: 14px;
+} */
+/* .search-page .searchbar-result:before{
+    display: none;
+}
+.search-page .weui-cell{
+    padding: 12px 15px 12px 35px;
+} */
+
+.searchbar-result {
+  height: 100%;
+}
+
+.searchbar-result .item {
+  display: flex;
+  padding: 20rpx 40rpx;
+  border-bottom: 1rpx solid #eee;
+  cursor: pointer;
+}
+
+.searchbar-result .item .poster {
+  width: 133rpx;
+  height: 178rpx;
+  margin-right: 20rpx;
+}
+
+.searchbar-result .item .meta {
+  flex: 1;
+}
+
+.searchbar-result .item .meta .title,
+.searchbar-result .item .meta .sub-genrestitle {
+  display: block;
+  margin-bottom: 15rpx;
+}
+
+.searchbar-result .item .meta .title {
+  font-size: 32rpx;
+}
+
+.searchbar-result .item .meta .genres {
+  font-size: 22rpx;
+  color: #999;
+}
+
+.searchbar-result .item .meta .pubtime {
+  font-size: 22rpx;
+  color: #999;
+
+}
+
+.searchbar-result .item .meta .artists {
+  font-size: 22rpx;
+  color: #999;
+  margin-top:15rpx;
+  margin-bottom:-3rpx; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.searchbar-result .item .rating text {
+  display: inline-block;
+  /* width: 40rpx; */
+  text-align: center;
+  /* text-align: center;
+  background-color: rgba(247, 76, 49, 0.8);
+  color: #fff;
+  padding: 10rpx;
+  border-radius: 20rpx; */
+  color: #ffb400;
+}
+.searchbar-result .item .rating .average {
+  font-size: 35rpx;
+  font-weight: bold;
+}
+.searchbar-result .item .rating .score {
+  font-size: 27rpx;
+}

@@ -1,0 +1,45 @@
+<import src="../common/searchBar/searchBar.wxml" />
+<view class="search-page">
+  <view>
+    <template is="searchBars" data="{{inputVal:inputVal,inputShowed:inputShowed}}" />
+  </view>
+  <view class="searchbar-result" wx:if="{{movies}}">
+    <block wx:for="{{ movies }}" wx:key="key">
+      <navigator url="../movieDetail/movieDetail?id={{ item.id }}" class="weui-cell" hover-class="weui-cell_active">
+        <view class="item">
+          <image class="poster" src="{{ item.images.large }}" />
+          <view class="meta">
+            <text class="title">{{ item.title }}</text>
+            <view class="genres">
+              <block wx:for="{{ item.genres }}" wx:key="id"> {{item}}/</block>
+            </view>
+            <view class="artists">导演：
+              <block wx:for="{{ item.directors }}" wx:key="id"> {{ item.name }} </block>
+            </view>
+            <text class="pubtime">{{ item.pubdates[0] }}</text>
+          </view>
+          <view class="rating">
+            <text class='average'>{{ item.rating.average }}</text>
+            <text class='score'>分</text>
+          </view>
+        </view>
+      </navigator>
+    </block>
+  </view>
+  <view class='searchHistory' wx:if="{{searchHistory && movies.length == 0}}">
+    <view class='history-title'>
+      <text class='history-titles'>历史记录</text>
+      <view class='clear' catchtap="clearHistory">
+        <text class='clears'>清除</text>
+      </view>
+    </view>
+    <view class='history-list'>
+      <block wx:for="{{ searchHistory }}" wx:key="id">
+        <view class='history-item' catchtap="setSearchKey" data-historyKey="{{item}}">
+          <text>{{item}}</text>
+        </view>
+        <view class="hr"></view>
+      </block>
+    </view>
+  </view>
+</view>
